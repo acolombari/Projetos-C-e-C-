@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <conio.h>
+
+	main(){
+	float n1, n2, resultado;
+	char operador;
+	
+	printf("\n Digite o primeiro valor: ");
+		scanf("%f", &n1);
+	printf("\n Digite o segundo valor: ");
+		scanf("%f", &n2);
+	printf("\n Digite o operador :");
+		scanf("%s", &operador);
+	
+	
+	// Operador de adição
+	
+	if(operador=='+'){
+		resultado = n1+n2;
+			printf("\n O resultado e: %f", resultado);
+	}
+	
+	// Operador de subtração
+	
+	else if(operador=='-'){
+		resultado = n1-n2;
+			printf("\n O resultado e: %f", resultado);
+	}
+	
+	// Operador de divisão
+	
+	else if(operador=='/'){
+		resultado = n1/n2;
+			printf("\n O resultado e: %f", resultado);
+	}	
+	
+	// Operador de multiplicação
+	
+	else if(operador=='*'){
+		resultado = n1*n2;
+			printf("\n O resultado e: %f", resultado);
+	}
+	
+	getch();
+}
